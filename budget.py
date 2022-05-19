@@ -20,11 +20,8 @@ class Budget():
 
     def withdraw(self, money):
         if self.balance < money:
-            return (f'Not enough money if your account')
+            return (f'Not enough money in your account')
         else:
             self.balance = self.balance - money
             withdraw_info = (f'You have withdrawn {money}, your new balance is {self.balance}')
             return withdraw_info
-
-    def transfer(self, category, money):
-        pass
